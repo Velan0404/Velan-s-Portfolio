@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <title>Velan's Portfolio</title>
+    <link rel="Icon" type="image/x-icon" href="./assets/favicon.png">
+</head>
+<body class="overflow-x-hidden">
+    <header class="w-full fixed top-0 left-0 bg-white shadow-md z-50">
+  <div class="flex justify-between items-center px-6 py-3">
+    <h1 class="text-xl font-bold text-blue-800">Velan's Portfolio</h1>
+
+    <!-- Hamburger Icon (visible only on mobile) -->
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-10 font-medium">
+      <li><a href="#" class="hover:text-blue-800">Home</a></li>
+      <li><a href="#About" class="hover:text-blue-800">About Me</a></li>
+      <li><a href="#Skills" class="hover:text-blue-800">Skills</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu (hidden by default) -->
+  <ul id="mobile-menu" class="hidden flex-col space-y-3 bg-blue-50 text-center py-4 font-medium md:hidden">
+    <li><a href="#" class="block hover:text-blue-800">Home</a></li>
+    <li><a href="#About" class="block hover:text-blue-800">About Me</a></li>
+    <li><a href="#Skills" class="block hover:text-blue-800">Skills</a></li>
+  </ul>
+</header>
+
+<!--Hero Section-->
+<section class="container mx-auto mt-32 px-5 flex flex-col md:flex-row items-center gap-10">
+  <div class="flex justify-center w-full md:w-1/2">
+    <img class="h-60 w-60 md:h-80 md:w-80 rounded-full object-cover" src="./assets/profile.jpg" alt="profile">
+  </div>
+
+  <div class="md:w-1/2 text-center md:text-left">
+    <h1 class="text-4xl md:text-5xl text-blue-800 font-bold">I'm Velan!</h1>
+    <p class="mt-4 text-gray-700 leading-relaxed">
+      I’m a passionate and detail-oriented Frontend Developer with a strong focus on creating modern, responsive, and user-friendly web interfaces. Skilled in <span class="text-blue-800 font-semibold">HTML, CSS, JavaScript, and Tailwind CSS</span>, I enjoy transforming ideas into clean, interactive designs. I continuously explore new web technologies and best practices to enhance performance, maintain cross-browser compatibility, and deliver smooth digital experiences.
+    </p>
+    <button id="About" class="mt-6 bg-blue-800 px-5 py-2 rounded-full text-white font-medium hover:bg-blue-600">
+      <a href="./assets/Velan_Resume.pdf" download>Download Resume</a>
+    </button>
+  </div>
+</section>
+
+<!--About Me Section-->
+<section id="About" class="container mx-auto mt-20 px-5">
+  <div class="text-center">
+    <hr class="mb-5">
+    <h1 class="text-3xl font-bold mb-5">About Me</h1>
+  </div>
+
+  <p class="text-gray-800 leading-relaxed text-justify md:text-center">
+    Hello! I’m <span class="text-blue-800 font-semibold">Velan .S</span>, currently pursuing my <span class="text-blue-800 font-semibold">Master’s degree in M.Voc. Software Development</span>. I have a strong interest in web development and enjoy creating clean, modern, and responsive websites.
+    I’m learning <span class="text-blue-800 font-semibold">Tailwind CSS, React.js, and backend development</span>, and I love experimenting with new technologies that improve my coding and design skills.
+    Outside of coding, I enjoy playing games, exploring tech tools, and watching tech or comedy videos. My goal is to become a skilled full-stack developer and build projects that make a real impact.
+  </p>
+</section>
+
+<!--Skills Section-->
+<section id="Skills" class="container mx-auto mt-16 px-5">
+  <hr>
+  <h1 class="text-3xl font-bold mt-5 text-center">Skills</h1>
+
+  <div class="overflow-hidden mt-8 whitespace-nowrap animate-scroll">
+    <img src="assets/html.png" alt="HTML" class="inline-block mx-8 h-16 md:h-24">
+    <img src="assets/css.png" alt="CSS" class="inline-block mx-8 h-16 md:h-24">
+    <img src="assets/js.png" alt="JavaScript" class="inline-block mx-8 h-16 md:h-24">
+    <img src="assets/tailwindcss.png" alt="Tailwind" class="inline-block mx-8 h-16 md:h-24">
+    <img src="assets/c++.png" alt="C++" class="inline-block mx-8 h-16 md:h-24">
+    <img src="assets/Microsoft_Office-Logo (2).png" alt="MS.Office" class="inline-block mx-8 h-16 md:h-24">
+    <img src="assets/Git-logo (2).png" alt="GitHub" class="inline-block mx-8 h-16 md:h-24">
+  </div>
+
+  <hr class="mt-8">
+</section>
+
+<!--Footer-->
+<footer class="bg-blue-800 text-white mt-10 py-10 px-6 flex flex-col md:flex-row flex-wrap justify-between gap-10">
+  <div class="w-full md:w-1/4">
+    <h2 class="text-2xl font-semibold mb-3">Quick Links</h2>
+    <ul class="space-y-2">
+      <li><a href="#" class="hover:underline">Home</a></li>
+      <li><a href="#About" class="hover:underline">About Me</a></li>
+      <li><a href="#Skills" class="hover:underline">Skills</a></li>
+    </ul>
+  </div>
+
+  <div class="w-full md:w-1/4">
+    <h2 class="text-2xl font-semibold mb-3">Contact Me</h2>
+    <div class="flex gap-3 mb-2">
+      <a href="https://www.linkedin.com/in/velan-shanmugam/" target="_blank"><img class="h-5" src="./assets/linkedin-square-logo-24.png" alt=""></a>
+      <a href="mailto:velan87600@gmail.com" target="_blank"><img class="h-5" src="./assets/gmail-logo-24.png" alt=""></a>
+      <a href="https://www.instagram.com/mr___forzen___heart/" target="_blank"><img class="h-5" src="./assets/instagram-logo-24.png" alt=""></a>
+      <a href="tel:9025798836"><img class="h-5" src="./assets/phone-solid-24.png" alt=""></a>
+    </div>
+    <p class="text-sm leading-6">
+      Address: Karaikudi,<br>
+      Sivaganga - 630001,<br>
+      Tamil Nadu
+    </p>
+  </div>
+
+  <div class="w-full md:w-1/4">
+    <h2 class="text-2xl font-semibold mb-3">Certifications</h2>
+    <ul class="space-y-2 text-sm">
+      <li><a href="#" class="hover:underline">Meta - Intro to Front-End Development</a></li>
+      <li><a href="#" class="hover:underline">BSS Computer College - C and C++</a></li>
+      <li><a href="#" class="hover:underline">Naan Mudhalvan - MS Office Fundamentals</a></li>
+    </ul>
+  </div>
+
+  <div class="w-full md:w-1/4 text-center md:text-left">
+    <h2 class="text-xl font-medium pt-5 md:pt-10">© 2025 Velan</h2>
+  </div>
+</footer>
+
+<!-- ✅ Mobile Menu Script -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
